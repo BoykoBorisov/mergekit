@@ -351,6 +351,7 @@ def _load_all_architectures() -> (
 JSON_ARCHITECTURES, NAME_TO_ARCH = _load_all_architectures()
 MISTRAL_INFO = _load_json_arch("mistral.json")
 QWEN2_INFO = _load_json_arch("qwen2.json")
+GPT_NEOX_INFO = _load_json_arch("gpt-neox.json")
 
 
 def get_architecture_info(config: PretrainedConfig) -> ArchitectureInfo:
