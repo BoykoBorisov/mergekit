@@ -73,6 +73,7 @@ class GPTNeoX(MoEOutputArchitecture):
             
             if not isinstance(base_config, transformers.GPTNeoXConfig):
                 base_config = transformers.GPTNeoXConfig(**base_config.to_dict())
+                base_config.model_type = "gpt_neox_moe"
                 base_config.sliding_window = None
 
             base_config.num_experts = num_experts

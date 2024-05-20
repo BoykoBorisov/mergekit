@@ -61,12 +61,6 @@
                 "name": "gpt_neox.layers.${layer_index}.post_attention_layernorm.bias"
             },
             {
-                "name": "gpt_neox.layers.${layer_index}.attention.bias"
-            },
-            {
-                "name": "gpt_neox.layers.${layer_index}.attention.masked_bias"
-            },
-            {
                 "name": "gpt_neox.layers.${layer_index}.attention.rotary_emb.inv_freq"
             }
         ]
